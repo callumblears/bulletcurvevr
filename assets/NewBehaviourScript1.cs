@@ -25,11 +25,9 @@ public class NewBehaviourScript1 : MonoBehaviour
     private void Start()
     {
         trackedObject = GetComponent<SteamVR_TrackedObject>();
-
-
-
     }
 
+    // Transform list of vectors to curve spwaned bullet
     List<Vector3> CreateTranslation(List<Vector3> input)
     {
         List<Vector3> output = new List<Vector3>();
@@ -42,7 +40,8 @@ public class NewBehaviourScript1 : MonoBehaviour
             }
             else
             {
-                output.Add(input[i] - input[i - 1]);
+                // curve bullet in x direction and apply forward velocity
+                output.Add(new Vector3(input[x].x - input[i].x - 1, input[i].y, input[i].z + 4));
             }
         }
 
@@ -54,56 +53,54 @@ public class NewBehaviourScript1 : MonoBehaviour
     void Update()
     {
         device = SteamVR_Controller.Input((int)trackedObject.index);
-
-
-        if (device.GetPressDown(triggerButton))
+        // check if device is connected
+        if(device != null)
         {
-            Debug.Log("TRIGGER PRESSED");
-            print(emitter.transform.position.x);
-            x++;
-
-
-        }
-
-        if (device.GetPress(triggerButton))
-
-        {
-
-            positions.Add(emitter.transform.position);
-            print(positions.Count);
-            print(positions[positions.Count-1]);
-
-
-
-
-            print("button pressed");
-
-
-        }
-
-
-        if (device.GetPressUp(triggerButton))
-        {
-
-            Debug.Log("TRIGGER UNPRESSED");
-            clone = Instantiate(bullet, emitter.transform.position, emitter.transform.rotation) as GameObject;
-            draw = true;
-
-        }
-        if (draw == true)
-        {
-            if (x < positions.Count - 1)
+            // debug print
+            if (device.GetPressDown(triggerButton))
             {
-                clone.transform.Translate(Vector3.Scale(CreateTranslation(positions)[x], reverse));
+                Debug.Log("TRIGGER PRESSED");
+                print(emitter.transform.position.x);
                 x++;
             }
-            else
-            {
-                print("path completed");
 
-                positions.Clear();
-                draw = false;
-                x = 0;
+
+            if (device.GetPress(triggerButton))
+            {
+                // set postion of the emitter of the gun
+                positions.Add(emitter.transform.position);
+                print(positions.Count);
+                print(positions[positions.Count - 1]);
+
+                print("button pressed");
+            }
+
+            // spawn bullet
+            if (device.GetPressUp(triggerButton))
+            {
+
+                Debug.Log("TRIGGER UNPRESSED");
+                clone = Instantiate(bullet, emitter.transform.position, emitter.transform.rotation) as GameObject;
+                draw = true;
+
+            }
+            // transform bullet curve
+            if (draw == true)
+            {
+                if (x < positions.Count - 1)
+                {
+                    // multiply bullet curve transformation by -1 to curver in appropriate direction
+                    clone.transform.Translate(Vector3.Scale(CreateTranslation(positions)[x], reverse));
+                    x++;
+                }
+                else
+                {
+                    print("path completed");
+
+                    positions.Clear();
+                    draw = false;
+                    x = 0;
+                }
             }
         }
 

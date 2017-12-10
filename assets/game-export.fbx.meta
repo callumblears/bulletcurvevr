@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 6cdeb5d8f58a18f48bb41b21b2113fef
+timeCreated: 1512728847
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Camera001
+    100004: Camera001.Target
+    100006: //RootNode
+    100008: Layer:0
+    100010: Layer:0-Door-Frame
+    100012: Layer:0-LIGHTING
+    100014: Layer:0-LIGHTING 1
+    100016: Layer:0-MIRROR
+    100018: Layer:0-MIRROR 1
+    100020: Layer:AC-FOAM
+    100022: Layer:AC-FOAM1
+    100024: Layer:CEILING-3D
+    100026: Layer:Flooring
+    100028: Layer:Flooring 1
+    100030: Layer:Wall Hatch
+    100032: Layer:Wall Hatch 1
+    100034: Omni001
+    100036: RingWave001
+    400000: Box001
+    400002: Camera001
+    400004: Camera001.Target
+    400006: //RootNode
+    400008: Layer:0
+    400010: Layer:0-Door-Frame
+    400012: Layer:0-LIGHTING
+    400014: Layer:0-LIGHTING 1
+    400016: Layer:0-MIRROR
+    400018: Layer:0-MIRROR 1
+    400020: Layer:AC-FOAM
+    400022: Layer:AC-FOAM1
+    400024: Layer:CEILING-3D
+    400026: Layer:Flooring
+    400028: Layer:Flooring 1
+    400030: Layer:Wall Hatch
+    400032: Layer:Wall Hatch 1
+    400034: Omni001
+    400036: RingWave001
+    2000000: Camera001
+    2300000: Box001
+    2300002: Layer:0
+    2300004: Layer:0-Door-Frame
+    2300006: Layer:0-LIGHTING
+    2300008: Layer:0-MIRROR 1
+    2300010: Layer:AC-FOAM
+    2300012: Layer:AC-FOAM1
+    2300014: Layer:CEILING-3D
+    2300016: Layer:Flooring 1
+    2300018: Layer:Wall Hatch 1
+    2300020: RingWave001
+    3300000: Box001
+    3300002: Layer:0
+    3300004: Layer:0-Door-Frame
+    3300006: Layer:0-LIGHTING
+    3300008: Layer:0-MIRROR 1
+    3300010: Layer:AC-FOAM
+    3300012: Layer:AC-FOAM1
+    3300014: Layer:CEILING-3D
+    3300016: Layer:Flooring 1
+    3300018: Layer:Wall Hatch 1
+    3300020: RingWave001
+    4300000: Layer:Flooring
+    4300002: Layer:Wall Hatch
+    4300004: Layer:CEILING-3D
+    4300006: Layer:AC-FOAM
+    4300008: Layer:0-MIRROR
+    4300010: Layer:0-LIGHTING
+    4300012: Layer:0-Door-Frame
+    4300014: Layer:AC-FOAM1
+    4300016: Layer:0
+    4300018: Box001
+    4300020: RingWave001
+    10800000: Omni001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramic
+    second: {fileID: 2100000, guid: aade6770a15518745a26f4c1e4d9a4d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #31'
+    second: {fileID: 2100000, guid: 0c784d10324a4c744867ed9b7db376d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f8dac9f33969ee849a0a2c85ab994504, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
