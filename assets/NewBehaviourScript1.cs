@@ -41,7 +41,7 @@ public class NewBehaviourScript1 : MonoBehaviour
             else
             {
                 // curve bullet in x direction and apply forward velocity
-                output.Add(new Vector3(input[x].x - input[i].x - 1, input[i].y, input[i].z + 4));
+                output.Add(new Vector3(input[i].x - input[i].x - 1, input[i].y, input[i].z + 4));
             }
         }
 
